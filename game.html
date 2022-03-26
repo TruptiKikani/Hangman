@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div>
+      <svg width="500" height="270" id="hangman">
+        <line x1="0" y1="250" x2="170" y2="250" id="bottombar" />
+        <line x1="150" y1="0" x2="150" y2="250" id="rightbar" />
+        <line x1="50" y1="2" x2="150" y2="2" id="topbar" />
+        <line x1="50" y1="1" x2="50" y2="20" id="rope" />
+        <g id="man">
+          <circle cx="50" cy="50" r="30" id="head" />
+          <line x1="50" y1="80" x2="50" y2="170" id="torso" />
+          <line x1="50" y1="120" x2="100" y2="90" id="arm1" />
+          <line x1="50" y1="120" x2="0" y2="90" id="arm2" />
+          <line x1="20" y1="230" x2="50" y2="170" id="leg1" />
+          <line x1="80" y1="230" x2="50" y2="170" id="leg2" />
+        </g>
+      </svg>
+    </div>
+
+    <div id="displayField"></div>
+    <div id="buttonGroup"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
